@@ -11,7 +11,7 @@ import UIKit
 class ColourGuessingView: UIView {
 
     // MARK: Properties of ColourGuessingView
-    public var greenButton: UIButton = {
+    public lazy var greenButton: UIButton = {
         let button = UIButton()
         button.setTitle("", for: .normal)
         button.backgroundColor = .systemGreen
@@ -20,7 +20,7 @@ class ColourGuessingView: UIView {
         return button
     }()
     
-    public var blueButton: UIButton = {
+    public lazy var blueButton: UIButton = {
        let button = UIButton()
         button.setTitle("", for: .normal)
         button.backgroundColor = .systemBlue
@@ -29,7 +29,7 @@ class ColourGuessingView: UIView {
         return button
     }()
     
-    public var redButton: UIButton = {
+    public lazy var redButton: UIButton = {
        let button = UIButton()
         button.setTitle("", for: .normal)
         button.backgroundColor = .systemRed
@@ -38,24 +38,24 @@ class ColourGuessingView: UIView {
         return button
     }()
     
-    public var stackView: UIStackView = {
+    public lazy var stackView: UIStackView = {
       let stackView = UIStackView()
         return stackView
     }()
     
-    public var scoreLabel: UILabel = {
+    public lazy var scoreLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         return label
     }()
     
-    public var highScoreLabel: UILabel = {
+    public lazy var highScoreLabel: UILabel = {
        let label = UILabel()
         label.textAlignment = .center
         return label
     }()
     
-    public var colourView: UIView = {
+    public lazy var colourView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemBlue
         return view
